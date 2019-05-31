@@ -3,9 +3,13 @@ package Program;
 import java.util.Scanner;
 
 import CommonCards.Card;
+import CommonCards.Deck;
 
 public class Dealer {
 
+	private Deck dealerDeck;
+	private static int dealerTotal;
+		Hand dealerHand;
 	public Dealer() {
 
 	}
@@ -15,24 +19,25 @@ public class Dealer {
 	public static void main(String[] args) {
 		System.out.print("How many cards would you like ?(1 or 2) ");
 		
-			do {
-				public void dealCard();
-				public void addCard(value);
-				
-			} while (total < 17);
 	}
 
-//		public int getHandValue() {
-//			int total = 0;
-//			for (Card card2 : card) {
-//				total+= card2.getRank().getValue();
-//			}
-//			return total;
-//		}
+//	Need to show the first card but hide the second until final step
+	String input = kb.nextLine();
+	
+	public void 
+
+	public int getHandValue() {
+		int value = dealerHand.getHandValue();
+		return value;
+	}
+
+	private static void dealCard() {
+		// TODO Auto-generated method stub
+
+	}
 
 	private void init() {
 		System.out.print("Hit or Stand?:");
-		String input = kb.nextLine();
 	}
 
 }

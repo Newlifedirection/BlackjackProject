@@ -8,9 +8,7 @@ import CommonCards.Deck;
 
 public class Hand {
 	
-	
 	List<Card> card = new ArrayList<>();
-	
 	
 	public Hand() {
 		
@@ -24,12 +22,14 @@ public class Hand {
 		return total;
 	}
 
-	public List<Card> getCard() {
+	public List<Card> getCard(String total) {
+		System.out.print("You have: " + total);
 		return card;
 	}
-	
-//Need to add card to value of hand
-//If value is less than 17, get another card
+		
+	//Need to add card to value of hand
+	//If value is less than 17, get another card
+		
 	public void addCard() {
 		
 	}
