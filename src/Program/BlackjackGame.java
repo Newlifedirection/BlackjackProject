@@ -36,7 +36,7 @@ public class BlackjackGame {
 			if (playerChoice.equals("H")) {
 				player.getHand().addCard(dealer.dealerDeck.dealCard());
 				if (player.getHand().getHandValue() > 21) {
-					System.out.println("Game over");
+					System.out.println("Bust. Game over");
 					System.exit(0);
 
 					System.out.println();
@@ -51,11 +51,18 @@ public class BlackjackGame {
 			dealer.getHand().addCard(dealer.dealerDeck.dealCard());
 			System.out.println("Dealer takes another card");
 		}
-		if(player.getHand().getHandValue()>dealer.getHand().getHandValue()) {
+		if (player.getHand().getHandValue() > 21) {
+			System.out.println("Bust. Game over");
+			System.exit(0);
+		}
+		else if(dealer.getHand().getHandValue()== player.getHand().getHandValue()) {
+			System.out.println("Tie, nobody wins");
+		}
+		else if(player.getHand().getHandValue()>dealer.getHand().getHandValue()) {
 			System.out.println("Player wins!");
 		}
 		else if(dealer.getHand().getHandValue()<player.getHand().getHandValue()) {
-			
+			System.out.println("Dealer wins");
 		}
 	}
 
