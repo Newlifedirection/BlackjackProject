@@ -6,14 +6,11 @@ import Program.Suit;
 public class Card {
 	private Rank rank;
 	private Suit suit;
-//	private Value value;
 
 	public Card(Rank rank, Suit suit) {
 		super();
 		this.rank = rank;
 		this.suit = suit;
-//		System.out.println(this);
-//		this.value = value;
 	}
 
 	@Override
@@ -40,18 +37,12 @@ public class Card {
 			return false;
 		return true;
 	}
-//	public Value getValue() {
-//		return value;
-//	}
 
 	@Override
 	public String toString() {
 		return (rank + " 0f " + suit);
 	}
 
-//	private String Card(String string) {
-//		return null;
-//	}
 
 	public Rank getRank() {
 		return rank;
