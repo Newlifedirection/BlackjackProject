@@ -8,21 +8,22 @@ import Program.Rank;
 import Program.Suit;
 
 public class Deck {
-	private static Rank rank;
-	private static Suit suit;
+//	private static Rank rank;
+//	private static Suit suit;
 	private List<Card> cards;
 
 	public Deck() {
-		cards = createDeck();
+		createDeck();
+//		System.out.println(cards);
 	}
-	private List<Card> createDeck() {
-		List<Card> deck = new ArrayList<>(52);
+	public void createDeck() {
+		cards = new ArrayList<>(52);
 		for (Suit s : Suit.values()) {
 			for (Rank r : Rank.values()) {
-				deck.add(new Card(r, s));
+				cards.add(new Card(r, s));
 			}
 		}
-		return deck;
+
 	}
 	public Deck(List<Card> cards) {
 		super();
@@ -39,6 +40,10 @@ public class Deck {
 	}
 	public List<Card> getCards() {
 		return cards;
+	}
+	@Override
+	public String toString() {
+		return "Deck [cards=" + cards + "]";
 	}
 
 }

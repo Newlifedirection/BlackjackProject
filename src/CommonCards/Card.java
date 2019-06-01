@@ -12,6 +12,7 @@ public class Card {
 		super();
 		this.rank = rank;
 		this.suit = suit;
+//		System.out.println(this);
 //		this.value = value;
 	}
 
@@ -39,31 +40,29 @@ public class Card {
 			return false;
 		return true;
 	}
+//	public Value getValue() {
+//		return value;
+//	}
 
 	@Override
 	public String toString() {
-		return Card(rank + " 0f " + suit);
+		return (rank + " 0f " + suit);
 	}
 
-	private String Card(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-//	public Value getValue() {
-//		return value;
+//	private String Card(String string) {
+//		return null;
 //	}
 
 	public Rank getRank() {
 		return rank;
 	}
 
-	public void setRank(Rank rank) {
-		this.rank = rank;
-	}
-
 	public Suit getSuit() {
 		return suit;
+	}
+
+	public void add(Card card) {
+		
 	}
 
 }
