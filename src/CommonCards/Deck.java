@@ -15,7 +15,6 @@ public class Deck {
 	public Deck() {
 		cards = createDeck();
 	}
-
 	private List<Card> createDeck() {
 		List<Card> deck = new ArrayList<>(52);
 		for (Suit s : Suit.values()) {
@@ -25,19 +24,19 @@ public class Deck {
 		}
 		return deck;
 	}
-
+	public Deck(List<Card> cards) {
+		super();
+		this.cards = cards;
+	}
 	public int checkDeckSize() {
 		return cards.size();
 	}
-
 	public void shuffle() {
 		Collections.shuffle(cards);
 	}
-
 	public Card dealCard() {
 		return cards.remove(0);
 	}
-
 	public List<Card> getCards() {
 		return cards;
 	}
