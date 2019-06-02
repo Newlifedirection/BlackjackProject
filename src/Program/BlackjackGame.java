@@ -55,10 +55,16 @@ public class BlackjackGame {
 			System.out.println("Bust. Game over");
 			System.exit(0);
 		}
+		else if(dealer.getHand().getHandValue() == 21) {
+			System.out.println("Dealer wins");
+		}
+		else if(dealer.getHand().getHandValue() > player.getHand().getHandValue()) {
+			System.out.println("Dealer wins");
+		}
 		else if(dealer.getHand().getHandValue()== player.getHand().getHandValue()) {
 			System.out.println("Tie, nobody wins");
 		}
-		else if(player.getHand().getHandValue()>dealer.getHand().getHandValue()) {
+		else if(player.getHand().getHandValue()> dealer.getHand().getHandValue()) {
 			System.out.println("Player wins!");
 		}
 		else if(dealer.getHand().getHandValue()<player.getHand().getHandValue()) {

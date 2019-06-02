@@ -30,8 +30,6 @@ public class Hand {
 		return card;
 	}
 		
-	//Need to add card to value of hand
-	//If value is less than 17, get another card
 		
 	public Card addCard(Card card2) {
 		card.add(card2);

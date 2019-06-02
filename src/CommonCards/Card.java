@@ -40,7 +40,7 @@ public class Card {
 
 	@Override
 	public String toString() {
-		return (rank + " 0f " + suit);
+		return (rank + " Of " + suit);
 	}
 
 

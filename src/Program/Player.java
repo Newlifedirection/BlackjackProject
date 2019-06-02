@@ -5,8 +5,6 @@ public abstract class Player {
 	private Hand hand;
 	public Player() {
 		hand = new Hand();
-//		get cards
-//		show cards
 		
 		System.out.println();
 	}

@@ -8,13 +8,10 @@ import Program.Rank;
 import Program.Suit;
 
 public class Deck {
-//	private static Rank rank;
-//	private static Suit suit;
 	private List<Card> cards;
 
 	public Deck() {
 		createDeck();
-//		System.out.println(cards);
 	}
 	public void createDeck() {
 		cards = new ArrayList<>(52);
