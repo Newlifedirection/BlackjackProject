@@ -1,6 +1,6 @@
 package Program;
 
-import CommonCards.Deck;
+import com.skilldistillery.projects.blackjack.src.commoncards.Deck;
 
 public class Dealer extends Player {
 	public Deck dealerDeck;

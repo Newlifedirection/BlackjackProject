@@ -3,8 +3,8 @@ package Program;
 import java.util.ArrayList;
 import java.util.List;
 
-import CommonCards.Card;
-import CommonCards.Deck;
+import com.skilldistillery.projects.blackjack.src.commoncards.Card;
+import com.skilldistillery.projects.blackjack.src.commoncards.Deck;
 
 public class Hand {
 	private List<Card> card;

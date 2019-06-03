@@ -1,4 +1,4 @@
-package CommonCards;
+package com.skilldistillery.projects.blackjack.src.commoncards;
 
 import java.util.ArrayList;
 import java.util.Collections;
