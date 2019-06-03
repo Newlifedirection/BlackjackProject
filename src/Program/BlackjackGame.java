@@ -33,7 +33,7 @@ public class BlackjackGame {
 
 			String playerChoice = kb.nextLine();
 
-			if (playerChoice.equals("H")) {
+			if (playerChoice.equalsIgnoreCase("H")) {
 				player.getHand().addCard(dealer.dealerDeck.dealCard());
 				if (player.getHand().getHandValue() > 21) {
 					System.out.println("Bust. Game over");
